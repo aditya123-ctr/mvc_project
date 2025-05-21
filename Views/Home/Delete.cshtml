@@ -18,10 +18,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EmployeAge)
+            @Html.DisplayNameFor(model => model.EmpAge)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EmployeAge)
+            @Html.DisplayFor(model => model.EmpAge)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.EmpOccupation)
@@ -35,6 +35,18 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.EmpSalary)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpEmail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpEmail)
+        </dd>
+        @* <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoNo)
+        </dd> *@
     </dl>
     
     <form asp-action="Delete">

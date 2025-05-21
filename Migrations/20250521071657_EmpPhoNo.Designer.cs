@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechNovaSolutions.Models;
 
@@ -10,9 +11,11 @@ using TechNovaSolutions.Models;
 namespace TechNovaSolutions.Migrations
 {
     [DbContext(typeof(EmployeeDbContext))]
-    partial class EmployeeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250521071657_EmpPhoNo")]
+    partial class EmpPhoNo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,9 +32,6 @@ namespace TechNovaSolutions.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EId"));
 
-                    b.Property<int>("EmpAge")
-                        .HasColumnType("int");
-
                     b.Property<string>("EmpEmail")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -43,6 +43,9 @@ namespace TechNovaSolutions.Migrations
 
                     b.Property<decimal>("EmpSalary")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("EmployeAge")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()

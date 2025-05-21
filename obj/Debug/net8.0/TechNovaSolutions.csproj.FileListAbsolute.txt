@@ -267,3 +267,4 @@ C:\Users\tiwas\source\repos\TechNovaSolutions\obj\Debug\net8.0\refint\TechNovaSo
 C:\Users\tiwas\source\repos\TechNovaSolutions\obj\Debug\net8.0\TechNovaSolutions.pdb
 C:\Users\tiwas\source\repos\TechNovaSolutions\obj\Debug\net8.0\TechNovaSolutions.genruntimeconfig.cache
 C:\Users\tiwas\source\repos\TechNovaSolutions\obj\Debug\net8.0\ref\TechNovaSolutions.dll
+C:\Users\tiwas\source\repos\TechNovaSolutions\obj\Debug\net8.0\TechNovaSolutions.sourcelink.json

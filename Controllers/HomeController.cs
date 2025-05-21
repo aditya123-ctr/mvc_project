@@ -7,7 +7,7 @@ namespace TechNovaSolutions.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly EmployeeDbContext employee;
+        
 
         //private readonly ILogger<HomeController> _logger;
 
@@ -15,7 +15,7 @@ namespace TechNovaSolutions.Controllers
         //{
         //    _logger = logger;
         //}
-
+        private readonly EmployeeDbContext employee;
         public HomeController(EmployeeDbContext Employee)
         {
             employee = Employee;

@@ -19,9 +19,9 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EmployeAge" class="control-label"></label>
-                <input asp-for="EmployeAge" class="form-control" />
-                <span asp-validation-for="EmployeAge" class="text-danger"></span>
+                <label asp-for="EmpAge" class="control-label"></label>
+                <input asp-for="EmpAge" class="form-control" />
+                <span asp-validation-for="EmpAge" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EmpOccupation" class="control-label"></label>
@@ -33,6 +33,16 @@
                 <input asp-for="EmpSalary" class="form-control" />
                 <span asp-validation-for="EmpSalary" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="EmpEmail" class="control-label"></label>
+                <input asp-for="EmpEmail" class="form-control" />
+                <span asp-validation-for="EmpEmail" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="PhoNo" class="control-label"></label>
+                <input asp-for="PhoNo" class="form-control" />
+                <span asp-validation-for="PhoNo" class="text-danger"></span>
+            </div> *@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
